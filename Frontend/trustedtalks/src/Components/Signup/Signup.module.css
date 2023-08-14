@@ -1,0 +1,109 @@
+ @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+
+body{
+    background-color: #625EF1;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h4{
+    color: white;
+    font-family:'Black Han Sans', sans-serif;
+}
+
+.card{
+    width: 500px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.username input{
+    background-color: #F3F3F3;
+    border: none;
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+
+}
+
+.username input:hover{
+    border:solid 1px
+}
+
+.password input{
+    background-color: #F3F3F3;
+    border: none;
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.password input:hover{
+    border:solid 1px
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    gap: 30px;
+}
+
+.button{
+    width: 300px;
+    display: flex;
+    justify-content: start;
+}
+
+.button button{
+    width: 150px;
+    border-radius: 15px;
+    background-color: #C7F6D6;
+    color: black;
+}
+
+.button button:hover{
+    width: 150px;
+    border-radius: 15px;
+    background-color: #C7F6D6;
+    color: black;
+}
+
+.sub{
+    display: flex;
+    justify-content: end;
+    width: 300px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 70px;
+}
+
+@media only screen and (max-width: 506px){
+    .card{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .heading{
+        margin-top: 60px;
+    }
+
+}
