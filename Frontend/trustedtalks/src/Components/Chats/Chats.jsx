@@ -11,7 +11,7 @@ const Chats = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/chats/username", {
+      .get("https://trustedtalks.onrender.com/chats/username", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -24,7 +24,7 @@ const Chats = () => {
 
       const fetchData = () => {
         axios
-        .get("http://localhost:3000/chats/messages", {
+        .get("https://trustedtalks.onrender.com/chats/messages", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -56,7 +56,7 @@ const Chats = () => {
         message: sendChat
     }
 
-    axios.post("http://localhost:3000/chats", data, {
+    axios.post("https://trustedtalks.onrender.com/chats", data, {
         headers: {
             Authorization: `Bearer ${token}`,
         }

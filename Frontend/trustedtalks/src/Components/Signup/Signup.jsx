@@ -21,7 +21,7 @@ const Signup = (props) => {
     
 
     if(action === "signup"){
-        axios.post("http://localhost:3000/user/signup", data)
+        axios.post("https://trustedtalks.onrender.com/user/signup", data)
         .then((res) => {
             console.log(res);
             alert(res.data.message);
@@ -33,7 +33,7 @@ const Signup = (props) => {
             alert(err.response.data.message);
         })
     }else if(action === "login"){
-        axios.post("http://localhost:3000/user/login", data)
+        axios.post("https://trustedtalks.onrender.com/user/login", data)
         .then((res)=> {
             console.log(res);
             alert(res.data.message);
