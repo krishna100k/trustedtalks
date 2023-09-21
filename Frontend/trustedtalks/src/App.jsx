@@ -1,4 +1,4 @@
-import './App.css'
+simport './App.css'
 import Chats from './Components/Chats/Chats';
 import Signup from "./Components/Signup/Signup"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -8,8 +8,6 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(()=>{
-
-    alert("Please wait for a minute so that the app can connect to the backend")
     
     axios.get("https://trustedtalks.onrender.com/")
     .then((response)=>console.log(response.data))
