@@ -8,6 +8,9 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(()=>{
+
+    alert("Please wait for a minute so that the app can connect to the backend")
+    
     axios.get("https://trustedtalks.onrender.com/")
     .then((response)=>console.log(response.data))
     .then((err)=>console.log(err))
