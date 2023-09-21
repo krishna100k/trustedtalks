@@ -1,4 +1,4 @@
-simport './App.css'
+import './App.css'
 import Chats from './Components/Chats/Chats';
 import Signup from "./Components/Signup/Signup"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
