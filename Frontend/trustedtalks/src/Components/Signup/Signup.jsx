@@ -2,12 +2,15 @@ import PropTypes from 'prop-types';
 import styles from "./Signup.module.css";
 import { Card, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from "axios";
 
 const Signup = (props) => {
     const { button, sub, action } = props;
 
+      useEffect(()=>{
+    alert("If the Website is not responding then it hasn't connected to the backend yet. Please wait for a minute and try again")
+  }, [])
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
