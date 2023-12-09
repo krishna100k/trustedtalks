@@ -4,12 +4,13 @@ import Signup from "./Components/Signup/Signup"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import axios from "axios"
 import { useEffect } from 'react';
+import url from "./server"
 
 function App() {
 
   useEffect(()=>{
     
-    axios.get("https://trustedtalks.onrender.com/")
+    axios.get(`${url}/home`)
     .then((response)=>console.log(response.data))
     .then((err)=>console.log(err))
   }, [])

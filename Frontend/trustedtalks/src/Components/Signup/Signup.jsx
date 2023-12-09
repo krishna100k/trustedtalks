@@ -4,6 +4,7 @@ import { Card, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from "axios";
+import url from "../../server"
 
 const Signup = (props) => {
     const { button, sub, action } = props;
@@ -24,7 +25,7 @@ const Signup = (props) => {
     
 
     if(action === "signup"){
-        axios.post("https://trustedtalks.onrender.com/user/signup", data)
+        axios.post(`${url}/user/signup`, data)
         .then((res) => {
             console.log(res);
             alert(res.data.message);
@@ -36,7 +37,7 @@ const Signup = (props) => {
             alert(err.response.data.message);
         })
     }else if(action === "login"){
-        axios.post("https://trustedtalks.onrender.com/user/login", data)
+        axios.post(`${url}/user/login`, data)
         .then((res)=> {
             console.log(res);
             alert(res.data.message);

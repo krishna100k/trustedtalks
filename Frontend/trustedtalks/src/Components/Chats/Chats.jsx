@@ -2,6 +2,8 @@ import styles from "./Chats.module.css";
 import { Typography, Avatar, Button } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import url from "../../server"
+
 const Chats = () => {
   const [username, setUsername] = useState("");
   const [data, setData] = useState([]);
@@ -11,7 +13,7 @@ const Chats = () => {
 
   useEffect(() => {
     axios
-      .get("https://trustedtalks.onrender.com/chats/username", {
+      .get(`${url}/chats/username`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -24,7 +26,7 @@ const Chats = () => {
 
       const fetchData = () => {
         axios
-        .get("https://trustedtalks.onrender.com/chats/messages", {
+        .get(`${url}/chats/messages`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -56,7 +58,7 @@ const Chats = () => {
         message: sendChat
     }
 
-    axios.post("https://trustedtalks.onrender.com/chats", data, {
+    axios.post(`${url}/chats`, data, {
         headers: {
             Authorization: `Bearer ${token}`,
         }
