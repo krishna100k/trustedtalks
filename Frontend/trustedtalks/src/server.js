@@ -1,3 +1,3 @@
-const url = "https://v6fs4sopzgcdxbi54xf4hfzkzu0xuxal.lambda-url.eu-north-1.on.aws"
+const url = "https://trustedtalks-production.up.railway.app"
 
 export default url
