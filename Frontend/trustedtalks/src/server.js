@@ -1,3 +1,3 @@
-const url = "https://trustedtalks-production.up.railway.app"
+const url = "https://pear-worried-tick.cyclic.app/"
 
 export default url
