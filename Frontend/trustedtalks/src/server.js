@@ -1,3 +1,3 @@
-const url = "https://pear-worried-tick.cyclic.app/"
+const url = "https://sleepy-cape-lamb.cyclic.app/"
 
 export default url
